@@ -1,0 +1,13 @@
+checks:
+  subscribed:
+    - CI
+    - Build
+    - CD
+  ignored:
+    - SAST
+    - Whitesource
+    - Mend
+issues: 
+  default: 
+    topic: code-smell
+  title: "Needs Triage:"
