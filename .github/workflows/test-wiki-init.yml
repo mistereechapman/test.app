@@ -17,9 +17,10 @@ jobs:
           git init
           git config --global user.email "${{ ENV.GIT_AUTHOR_EMAIL }}"
           git config --global user.name "${{ ENV.GIT_AUTHOR_NAME }}"
+          git config --global init.defaultBranch master
           git add Home.md
           git commit -m "Initial commit for repo"
-          git branch -M master
+          git branch -m master          
           git remote add origin git@github.com:mistereechapman/test.app.wiki.git
           git push -u origin master
         shell: bash
