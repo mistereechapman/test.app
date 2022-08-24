@@ -11,6 +11,9 @@ jobs:
       - name: init repo
         run: |
           git init
+          echo "# Hello world" >> Home.md
+          git add .
+          git commit -m "Initial commit for repo"
           git remote add origin https://github.com/mistereechapman/test.app.git
           git push -u origin master
         shell: bash
