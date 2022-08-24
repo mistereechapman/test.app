@@ -1,0 +1,16 @@
+name: test wiki init
+
+on:
+  workflow_dispatch:
+  
+  
+jobs:
+  init-config:
+    runs-on: [ubuntu]
+    steps:
+      - name: init repo
+        run: |
+          git init
+          git remote add origin https://github.com/mistereechapman/test.app.git
+          git push -u origin master
+        shell: bash
