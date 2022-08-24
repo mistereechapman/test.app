@@ -6,7 +6,7 @@ on:
   
 jobs:
   init-config:
-    runs-on: [ubuntu]
+    runs-on: [ubuntu-latest]
     steps:
       - name: init repo
         run: |
