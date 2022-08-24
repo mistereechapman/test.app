@@ -20,6 +20,6 @@ jobs:
           git add Home.md
           git commit -m "Initial commit for repo"
           git branch -M master
-          git remote add origin https://${{ secrets.GITHUB_TOKEN }}@github.com/mistereechapman/test.app.wiki.git
+          git remote add origin git@github.com:mistereechapman/test.app.wiki.git
           git push -u origin master
         shell: bash
