@@ -2,7 +2,10 @@ name: test wiki init
 
 on:
   workflow_dispatch:
-  
+
+env:
+  GIT_AUTHOR_NAME: Actionbot
+  GIT_AUTHOR_EMAIL: actions@github.com
   
 jobs:
   init-config:
@@ -13,6 +16,8 @@ jobs:
           git init
           echo "# Hello world" >> Home.md
           git add .
+          git config --global user.email "${{ ENV.GIT_AUTHOR_EMAIL }}"
+          git config --global user.name "${{ ENV.GIT_AUTHOR_NAME }}"
           git commit -m "Initial commit for repo"
           git remote add origin https://github.com/mistereechapman/test.app.git
           git push -u origin master
