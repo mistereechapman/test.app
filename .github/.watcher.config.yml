@@ -3,6 +3,7 @@ checks:
     - CI
     - Build
     - CD
+    - build
   ignored:
     - SAST
     - Whitesource
