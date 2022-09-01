@@ -1,7 +1,6 @@
 checks:
   subscribed:
     - CI
-    - Build
     - CD
     - build
   ignored:
