@@ -8,6 +8,6 @@ checks:
     - Whitesource
     - Mend
 issues: 
-  issues:
+  labels:
     - app-created
   title: "Needs Triage:"
