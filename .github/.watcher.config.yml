@@ -9,5 +9,5 @@ checks:
     - Mend
 issues: 
   labels:
-    - app-created
+    - triage-required
   title: "Needs Triage:"
