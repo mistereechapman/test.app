@@ -8,6 +8,6 @@ checks:
     - Whitesource
     - Mend
 issues: 
-  default: 
-    topic: code-smell
+  issues:
+    - app-created
   title: "Needs Triage:"
